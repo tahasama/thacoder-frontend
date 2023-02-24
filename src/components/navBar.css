@@ -1,0 +1,321 @@
+/* Side bar */
+
+.sideBarContainer {
+  position: fixed;
+  height: 100%;
+  width: 44px;
+  background-color: #363842;
+  z-index: 99 !important;
+  top: 44px;
+}
+.sideBar {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -4px;
+  width: 50px;
+}
+.side {
+  flex: 1;
+  margin: 10px 10px 15px;
+  font-size: 30px;
+  height: 40px;
+  width: 40px;
+  /* transition: all 1s ease-in; */
+  animation: fadeIn 0.5s ease-out;
+  transition: color 0.8s ease-in;
+}
+.side:hover {
+  color: #baccd4;
+}
+.but {
+  background-color: transparent;
+  border: none;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.a {
+  color: rgb(68, 163, 163);
+}
+.b {
+  color: rgb(182, 56, 176);
+}
+.c {
+  color: rgb(75, 48, 150);
+}
+.d {
+  color: rgb(219, 69, 69);
+}
+.e {
+  color: rgb(173, 87, 16);
+}
+.f {
+  color: rgb(144, 146, 15);
+}
+.g {
+  color: rgb(15, 131, 87);
+}
+
+.message {
+  position: absolute;
+  left: 45px;
+  padding: 8px;
+  margin-top: -41px;
+  height: 30px;
+  background-color: #363842;
+  color: rgb(224, 207, 207);
+  white-space: nowrap;
+  overflow: auto;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0px 18px 18px 0px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.iconSide:active {
+  animation: minShake 0.2s linear;
+}
+.sizeIt {
+  /* background-color: rgb(218, 201, 198); */
+  margin-left: 2px;
+  font-size: 28px;
+}
+
+@keyframes minShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Top bar */
+
+.topBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #363842;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 99;
+  height: 45px;
+}
+.thacoder {
+  /* margin: 1px 10px; */
+  margin: 3px 0px 0px 9px;
+  font-size: 32px;
+  text-decoration: none;
+  color: rgb(245, 219, 180);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 3px 0;
+  padding: 0;
+  width: 100vw;
+  height: 36px;
+  background-color: #363842;
+}
+.searchButton {
+  border-radius: 0 8px 8px 0;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 22px;
+  position: relative;
+  top: 6px;
+}
+.searchInput {
+  padding: 8px;
+  background-color: #4b4d64;
+  color: #fff;
+  flex-grow: 3;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  width: 26vw;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  height: 15px;
+}
+.user {
+  margin-right: 15px;
+  display: flex;
+  margin: 0px 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.userlink {
+  margin-right: 10px;
+  text-decoration: none;
+  /* color: #e0eaee; */
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 2px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.userlink:active {
+  transform: translate(0.5px, 0.5px);
+  opacity: 0.8;
+}
+.signUp {
+  border: 2px solid rgba(1, 171, 177, 0.8);
+  color: rgba(1, 177, 168, 0.8);
+}
+.logIn {
+  border: 2px solid rgb(218, 89, 250, 0.8);
+  color: rgb(218, 89, 250, 0.8);
+}
+
+.imageContainerbar {
+  display: flex;
+  cursor: pointer;
+  margin-right: -10px;
+}
+
+.userIconBar {
+  font-size: 32px;
+  /* margin: 12px; */
+  margin-top: 7px;
+  margin-right: 10px;
+  color: #5229c2;
+}
+.userImageBar {
+  border-radius: 10px;
+  object-fit: contain;
+  height: 35px;
+  margin: 5px 5px 2px 0;
+  z-index: 99;
+  color: #2936c2;
+}
+
+.threeBars {
+  position: relative;
+  font-size: 36px;
+  margin: 0;
+  top: 2px;
+  right: 12px;
+  color: #592ed1;
+}
+
+.profileWrapper {
+  position: absolute;
+  top: 50px;
+  margin-right: 50px;
+  background-color: rgb(70, 84, 102);
+  border-radius: 5px;
+  padding: 6px 10px;
+  width: 100px;
+  animation-duration: 0.14s;
+  animation-name: dropDown;
+}
+@keyframes dropDown {
+  from {
+    height: 10%;
+    background-color: rgb(103, 116, 134);
+  }
+  to {
+    height: 100%;
+    background-color: rgb(70, 84, 102);
+  }
+}
+
+.barbar {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid rgb(0, 153, 153);
+  color: rgb(228, 203, 203);
+  font-size: 16px;
+  margin: 6px;
+  cursor: pointer;
+  animation-duration: 0.6s;
+  animation-name: dropDownShow;
+}
+.starColor {
+  color: #a6ff00;
+}
+@keyframes dropDownShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.barbar:hover {
+  color: rgba(148, 179, 172, 0.7);
+}
+.reacticon {
+  position: relative;
+  font-size: 40px;
+  right: 4px;
+  /* top: 7px; */
+  color: rgb(59, 28, 196);
+  transition: color 1s ease-in-out;
+}
+.reacticon:hover {
+  color: white;
+}
+.reactmessage {
+  margin-top: -50px;
+}
+
+@media only screen and (max-width: 640px) {
+  .search {
+    margin: 0;
+  }
+  .thacoder {
+    margin: 4px 7px;
+    font-size: 26px;
+  }
+  .user {
+    margin: 0;
+  }
+  .searchInput {
+    margin: 4px 0 0;
+  }
+  /* .searchButton {
+    margin: 0;
+    opacity: 0;
+  } */
+  .signUp {
+    margin: 1px;
+  }
+  .logIn {
+    margin: 1px;
+  }
+}

@@ -1,0 +1,86 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: column;
+  /* background-color: red; */
+  margin-left: 34px;
+}
+.intro {
+  font-size: 40px;
+  width: 70vw;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 0vw;
+  margin-bottom: 3vh;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+.intro2 {
+  margin: 0 0 4vh 3vw;
+  font-weight: 500;
+  font-size: 34px;
+}
+.buttonWrapper {
+  position: relative;
+  display: flex;
+  height: 14vh;
+  padding: 10px;
+  top: 6vh;
+}
+.buttona {
+  position: relative;
+  font-size: 30px;
+  width: 30vw;
+  height: 1vw;
+  cursor: pointer;
+  margin: 0px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 20px;
+  background-color: rgb(67, 69, 92, 0.1);
+  box-shadow: 10px 6px 15px rgb(100, 90, 0);
+}
+.buttona:hover {
+  animation: shake 1s linear;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+    padding: 8px;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+    padding: 8px;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.logos {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 45px;
+}
+.reactLogos {
+  font-size: 60px;
+}
+.logoName {
+  position: relative;
+  top: -18px;
+}
+
+.h {
+  color: rgb(255, 102, 0);
+}
+.i {
+  color: rgb(42, 42, 180);
+}

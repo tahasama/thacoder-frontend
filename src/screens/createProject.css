@@ -1,0 +1,108 @@
+.modalContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 50vw;
+  height: 74.5vh;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgba(96, 48, 150, 0.35);
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.3);
+}
+
+.modalHeaderTitle {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.modalFooter {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.createButton {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  background-color: #445a63;
+  color: #fff;
+  flex-grow: 1;
+  cursor: pointer;
+  margin: 12px 0px;
+  font-size: 18px;
+  width: 90%;
+}
+
+.pbutton {
+  margin: 0;
+}
+.createButton:active {
+  transform: translate(0.5px, 0.5px);
+  background-color: #3a4950;
+}
+.createInput {
+  padding: 8px;
+  margin-right: 3px;
+  background-color: #334146;
+  color: #fff;
+  flex-grow: 3;
+  border: none;
+  border-radius: 8px;
+  width: 40vw;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(69, 69, 88);
+}
+
+.creating {
+  margin-top: 2px;
+  /* margin-left: 7vw; */
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  animation: create 1.5s linear infinite;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes create {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+input[type="radio"] {
+  transform: scale(1.3);
+  margin: 2px;
+}
+.radioInput {
+  display: flex;
+  margin: 15px 0 10px -2px;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.titleError {
+  position: relative;
+  font-size: 18px;
+  left: 16.5vw;
+  top: -10px;
+}
