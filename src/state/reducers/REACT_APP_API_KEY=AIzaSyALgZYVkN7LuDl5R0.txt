@@ -1,0 +1,17 @@
+REACT_APP_API_KEY=AIzaSyALgZYVkN7LuDl5R0RxN--jLTpblcFjlJs
+
+REACT_APP_APP_ID=1:121847091832:web:d967972b521ef58dee938d
+
+REACT_APP_AUTJ_DOMAIN=editorauthdev.firebaseapp.com
+
+REACT_APP_MESSAGING_SENDER_ID=121847091832
+
+REACT_APP_PROJECT_ID=editorauthdev
+
+REACT_APP_PROJECT_URL=https://tha-coder.onrender.com/api/project/
+
+REACT_APP_STORAGE_BUCKET=editorauthdev.appspot.com
+
+REACT_APP_USER_URL=https://tha-coder.onrender.com/api/user/
+
+
